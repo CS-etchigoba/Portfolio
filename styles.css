@@ -14,8 +14,6 @@
   --button-text: #151126;
   --tag-text: #c7cee5;
   --art-text: #d4d9f1;
-  --art-line: #56628c;
-  --blue: #94b4ff;
   --font: 'DM Sans',Arial,sans-serif;
 }
 
@@ -235,106 +233,20 @@ h1 > span {
   flex-wrap: wrap;
 }
 
-.hero-art {
+.hero-photo {
   position: relative;
-  min-height: 450px;
+  height: 450px;
   border-radius: 130px 130px 5px 5px;
   overflow: hidden;
-  background: linear-gradient(145deg, #182740, #282044);
-  color: var(--art-text);
+  background: var(--surface);
 }
 
-.art-grid {
-  position: absolute;
-  inset: 0;
-  background-image: linear-gradient(#a6b3ee12 1px,transparent 1px),linear-gradient(90deg,#a6b3ee12 1px,transparent 1px);
-  background-size: 36px 36px;
-  mask-image: linear-gradient(transparent,#000 30%,#000 70%,transparent);
-}
-
-.art-label {
-  position: absolute;
-  top: 40px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  font-size: 8px;
-  letter-spacing: 1.6px;
-}
-
-.monogram {
-  font-family: 'Manrope',Arial,sans-serif;
-  position: absolute;
-  inset: 95px 0 auto;
-  text-align: center;
-  font-size: 164px;
-  letter-spacing: -18px;
-  line-height: 1.2;
-  font-weight: 650;
-  transform: rotate(-8deg);
-  color: var(--accent);
-}
-
-.monogram span {
-  color: var(--blue);
-}
-
-.orbit {
-  position: absolute;
-  left: 15%;
-  right: 15%;
-  height: 195px;
-  top: 115px;
-  border: 1px solid var(--art-line);
-  border-radius: 50%;
-  transform: rotate(-35deg);
-}
-
-.orbit-two {
-  transform: rotate(40deg);
-  top: 110px;
-  height: 210px;
-}
-
-.art-chip {
-  position: absolute;
-  background: var(--surface-raised);
-  border: 1px solid var(--art-line);
-  box-shadow: 0 7px 20px #05081566;
-  border-radius: 7px;
-  padding: 9px 14px;
-  font-size: 12px;
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  transform: rotate(-6deg);
-}
-
-.art-chip > span {
-  color: var(--purple);
-  font-size: 17px;
-}
-
-.chip-one {
-  left: 25px;
-  top: 130px;
-}
-
-.chip-two {
-  right: 22px;
-  bottom: 100px;
-  transform: rotate(6deg);
-}
-
-.art-bottom {
-  position: absolute;
-  bottom: 23px;
-  left: 25px;
-  right: 25px;
-  font-size: 8px;
-  letter-spacing: 1.3px;
-  display: flex;
-  justify-content: space-between;
+.hero-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 15%;
 }
 
 .focus-strip {
@@ -843,8 +755,8 @@ details p {
     letter-spacing: -2.5px;
   }
 
-  .hero-art {
-    min-height: 410px;
+  .hero-photo {
+    height: 410px;
   }
 
   .hero .eyebrow {
@@ -903,43 +815,12 @@ details p {
     font-size: 15px;
   }
 
-  .hero-art {
-    min-height: 340px;
+  .hero-photo {
+    height: 340px;
     border-radius: 90px 90px 5px 5px;
     max-width: 500px;
     width: 100%;
     margin: auto;
-  }
-
-  .monogram {
-    top: 62px;
-    font-size: 150px;
-  }
-
-  .orbit {
-    top: 70px;
-    height: 170px;
-    left: 20%;
-    right: 20%;
-  }
-
-  .orbit-two {
-    top: 75px;
-    height: 170px;
-  }
-
-  .chip-one {
-    top: 100px;
-    left: 25px;
-  }
-
-  .chip-two {
-    bottom: 70px;
-    right: 25px;
-  }
-
-  .art-label {
-    top: 28px;
   }
 
   .hero-foot {
